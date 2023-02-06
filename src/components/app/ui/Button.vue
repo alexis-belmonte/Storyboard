@@ -27,7 +27,7 @@ export default {
 
 <template>
     <button :style="cssVars" :class="{ 'filled': filled }">
-        <span class="material-symbols-outlined">{{ icon }}</span>
+        <span v-if="icon" class="material-symbols-outlined">{{ icon }}</span>
         <div v-if="$slots.default"><slot /></div>
     </button>
 </template>
@@ -41,8 +41,11 @@ button {
     align-items: center;
     justify-content: center;
 
+    column-gap: 8pt;
+
     margin: 0;
-    padding: 0;
+    padding: 7pt;
+    height: 35pt;
 
     background-color: var(--sb-transparent-color);
 
@@ -60,16 +63,12 @@ button {
 }
 
 button > span {
-    padding: 7pt;
-
     color: var(--bt-palette-color);
 
     transition: color var(--sb-normal-transition);
 }
 
 button > div {
-    padding-right: 8pt;
-
     font-family: 'Source Sans Pro';
     font-size: var(--sb-small-font-size);
 
