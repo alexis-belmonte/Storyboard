@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10cm"
+   height="10cm"
+   viewBox="0 0 99.999998 100"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="../public/favicon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.3209912"
+     inkscape:cx="-97.653943"
+     inkscape:cy="249.81241"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="72.626616"
+       y="94.040075"
+       width="145.70874"
+       height="234.65687"
+       id="rect969" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter1923"
+       x="-0.15728382"
+       y="-0.29986989"
+       width="1.3735009"
+       height="1.7120992">
+      <feFlood
+         flood-opacity="0.141176"
+         flood-color="rgb(142,93,31)"
+         result="flood"
+         id="feFlood1913" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite1915" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="11.7923"
+         result="blur"
+         id="feGaussianBlur1917" />
+      <feOffset
+         dx="10"
+         dy="10"
+         result="offset"
+         id="feOffset1919" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="atop"
+         result="fbSourceGraphic"
+         id="feComposite1921" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix2417" />
+      <feFlood
+         id="feFlood2419"
+         flood-opacity="0.121569"
+         flood-color="rgb(42,52,42)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite2421"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur2423"
+         in="composite1"
+         stdDeviation="6"
+         result="blur" />
+      <feOffset
+         id="feOffset2425"
+         dx="6"
+         dy="6"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite2427"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#698269;fill-opacity:1;stroke-width:0.264583"
+       id="rect131"
+       width="100"
+       height="100"
+       x="-1.3877788e-17"
+       y="-1.3877788e-17"
+       rx="16"
+       ry="16" />
+    <g
+       aria-label="S"
+       transform="matrix(0.40622525,-0.16536008,0.16536008,0.40622525,-43.381986,-10.112044)"
+       id="text967"
+       style="font-size:200px;white-space:pre;shape-inside:url(#rect969);display:inline;fill:#698269" />
+    <path
+       id="path1004"
+       style="font-size:200px;white-space:pre;shape-inside:url(#rect969);display:inline;fill:#f1dbbf;font-family:'Archivo Black';-inkscape-font-specification:'Archivo Black, ';filter:url(#filter1923)"
+       d="M 282.12219 174.02585 L 205.73464 174.01268 C 204.43133 162.1911 198.73718 153.11979 188.62697 146.81579 C 177.29366 139.6158 162.82727 136.01617 145.22729 136.01617 C 127.36066 136.01617 112.56042 139.61556 100.82711 146.81555 C 89.227139 153.8822 83.427092 164.94997 83.427092 180.01661 C 83.427092 190.28326 86.159949 198.41545 91.626604 204.41544 C 97.09326 210.41542 103.49314 214.7495 110.82645 217.41616 C 118.15978 219.94949 127.42734 222.41609 138.62732 224.81608 C 147.8273 226.68274 154.42669 228.4824 158.42669 230.21573 C 162.56001 231.81572 164.62706 234.28236 164.62706 237.61569 C 164.62706 241.34902 162.76062 243.81573 159.02729 245.01572 C 155.42729 246.21572 150.82734 246.81594 145.22734 246.81594 C 137.89403 246.81594 132.36062 245.81645 128.6273 243.81646 C 124.89397 241.81646 123.02744 237.94951 123.02744 232.21619 C 123.02744 231.01619 123.09384 230.0828 123.22715 229.41614 L 113.55524 229.41624 L 13.412724 229.39877 L 10.628774 236.23785 L 81.403755 236.25105 C 82.443487 251.20428 88.440175 261.86793 99.426566 268.21561 C 111.42654 275.0156 128.0271 278.41633 149.22706 278.41633 C 167.62702 278.41633 182.29371 274.48236 193.22702 266.61571 C 204.29367 258.74906 209.82739 246.68307 209.82739 230.41644 C 209.69406 220.81646 206.96046 213.21633 201.62714 207.61635 C 196.29382 202.01636 190.0264 198.01641 182.82642 195.61642 C 175.75976 193.08308 166.69421 190.68243 155.62756 188.41576 C 146.16091 186.5491 139.29363 184.74895 135.02696 183.01562 C 130.76031 181.2823 128.62653 178.61647 128.62653 175.01647 C 128.62653 172.48315 130.1598 170.34972 133.22645 168.61639 C 136.42645 166.88306 140.96003 166.01614 146.82669 166.01614 C 152.82668 166.01614 157.29399 167.34911 160.22732 170.01577 C 163.16064 172.68244 164.6276 176.01592 164.6276 180.01592 L 164.62756 180.81605 L 164.64287 180.81593 L 164.64312 180.84656 L 279.33824 180.86493 L 282.12219 174.02585 z "
+       transform="matrix(0.40622524,-0.16536008,0.16536008,0.40622524,-43.381986,-10.112044)" />
+  </g>
+</svg>
