@@ -1,11 +1,5 @@
-<script lang="ts">
-import Menu from '../components/Menu.vue'
-
-export default {
-    components: {
-        Menu
-    }
-}
+<script setup lang="ts">
+import Menu from '@/components/app/Menu.vue'
 </script>
 
 <template>
