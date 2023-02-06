@@ -9,7 +9,6 @@ import ProfileFace from '@/components/app/ui/ProfileFace.vue'
     <header>
         <div class="left">
             <Button icon="add" palette="primary" />
-            <Button icon="refresh" palette="secondary" filled></Button>
         </div>
         <div class="center">
             <router-link to="/" class="brand-logo-link">
