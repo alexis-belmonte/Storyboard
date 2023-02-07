@@ -10,8 +10,7 @@ export default {
             required: false
         },
         filled: {
-            type: Boolean,
-            default: false
+            type: Boolean
         }
     },
     computed: {
@@ -26,16 +25,16 @@ export default {
 </script>
 
 <template>
-    <button :style="cssVars" :class="{ 'filled': filled }">
-        <span v-if="icon" class="material-symbols-outlined">{{ icon }}</span>
-        <div v-if="$slots.default"><slot /></div>
+    <button :style="cssVars" class="button" :class="{ 'filled': filled }">
+        <span v-if="icon" class="material-symbols-outlined icon">{{ icon }}</span>
+        <div v-if="$slots.default" class="label"><slot /></div>
     </button>
 </template>
 
 <style scoped>
 /* Default 'non-filled' style */
 
-button {
+.button {
     display: flex;
 
     align-items: center;
@@ -62,13 +61,13 @@ button {
     cursor: pointer;
 }
 
-button > span {
+.button > .icon {
     color: var(--bt-palette-color);
 
     transition: color var(--sb-normal-transition);
 }
 
-button > div {
+.button > .label {
     font-family: 'Source Sans Pro';
     font-size: var(--sb-small-font-size);
 
@@ -77,23 +76,23 @@ button > div {
     transition: color var(--sb-normal-transition);
 }
 
-button:hover {
+.button:hover {
     border-color: var(--bt-palette-color);
 }
 
-button:active {
+.button:active {
     border-color: var(--sb-transparent-color);
 
     box-shadow: 0 0 0 4px var(--bt-palette-dark-color);
 }
 
-button:active > span, button:active > div {
+.button:active > .icon, .button:active > .label {
     color: var(--bt-palette-dark-color);
 }
 
 /* 'Filled'-style starts here */
 
-button.filled {
+.button.filled {
     border-color: var(--sb-transparent-color);
 
     background-color: var(--bt-palette-color);
@@ -101,15 +100,15 @@ button.filled {
     box-shadow: 0 0 0 0px var(--sb-transparent-color);
 }
 
-button.filled > span, button.filled > div {
+.button.filled > .icon, .button.filled > .label {
     color: var(--sb-light-color);
 }
 
-button.filled:hover {
+.button.filled:hover {
     box-shadow: 0 0 0 4px var(--bt-palette-dark-color);
 }
 
-button.filled:active {
+.button.filled:active {
     background-color: var(--bt-palette-dark-color);
 
     box-shadow: 0 0 0 0px var(--sb-transparent-color);
