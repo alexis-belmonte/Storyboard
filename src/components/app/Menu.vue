@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import BrandLogo from '@/assets/brand/BrandLogo.vue';
 
 import Button from '@/components/app/ui/Button.vue'
@@ -26,8 +26,7 @@ import ProfileFace from '@/components/app/ui/ProfileFace.vue'
 header {
     display: flex;
 
-    margin: 16pt;
-    padding: 0pt 8pt;
+    padding: 16pt 24pt;
 }
 
 header > div {
