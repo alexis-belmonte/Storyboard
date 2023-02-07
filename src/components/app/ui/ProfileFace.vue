@@ -24,12 +24,12 @@ export default {
 
 <template>
     <div class="container" :style="cssVars" :class="{ 'placeholder': !src }">
-        <span class="material-symbols-outlined">person</span>
+        <span class="material-symbols-outlined icon">person</span>
     </div>
 </template>
 
 <style scoped>
-div {
+.container {
     display: inline-flex;
 
     align-items: center;
@@ -53,11 +53,11 @@ div {
     transition: box-shadow var(--sb-normal-transition);
 }
 
-div:hover {
+.container:hover {
     box-shadow: 0 0 0 4px var(--pf-palette-color);
 }
 
-div > span {
+.container > .icon {
     display: none;
 
     font-size: 24pt;
@@ -65,7 +65,7 @@ div > span {
     color: var(--pf-palette-color);
 }
 
-div.placeholder > span {
+.container.placeholder > .icon {
     display: block;
 }
 
