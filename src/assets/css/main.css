@@ -11,8 +11,12 @@ html {
     --sb-primary-radius: 12pt;
     --sb-secondary-radius: 6pt;
 
+    /* Border definitions */
+    --sb-primary-border-width: 3pt;
+    --sb-secondary-border-width: 2pt;
+
     /* Transition definitions */
-    --sb-fast-transition: 0.125s cubic-bezier(0.4, 0, 0.2, 1);
+    --sb-fast-transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
     --sb-normal-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
     /* Font size definitions */
