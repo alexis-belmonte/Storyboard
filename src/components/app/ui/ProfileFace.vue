@@ -1,21 +1,17 @@
 <script lang="ts">
+import Palettable from './Palettable.vue';
+
 export default {
+    extends: Palettable,
     props: {
-        src: {
-            type: String,
-            required: false
-        },
-        palette: {
-            type: String,
-            default: 'primary'
-        }
+        'src': String,
+        'palette': String,
+        'hoverable': Boolean
     },
     computed: {
-        cssVars() {
+        componentStyle() {
             return {
-                '--pf-url': `url(${this.src})`,
-                '--pf-palette-color': `var(--sb-${this.palette}-color)`,
-                '--pf-palette-dark-color': `var(--sb-${this.palette}-dark-color)`
+                '--pf-url': `url(${this.src})`
             }
         }
     }
@@ -23,7 +19,10 @@ export default {
 </script>
 
 <template>
-    <div class="container" :style="cssVars" :class="{ 'placeholder': !src }">
+    <div
+        class="container"
+        :style="[componentStyle, palettableStyle]"
+        :class="{ 'placeholder': !src, 'hoverable': hoverable }">
         <span class="material-symbols-outlined icon">person</span>
     </div>
 </template>
@@ -40,7 +39,7 @@ export default {
 
     border-radius: var(--sb-frame-radius);
 
-    background-color: var(--pf-palette-dark-color);
+    background-color: rgb(var(--pt-color));
     background-image: var(--pf-url);
     background-position: center;
     background-repeat: no-repeat;
@@ -53,16 +52,16 @@ export default {
     transition: box-shadow var(--sb-normal-transition);
 }
 
-.container:hover {
-    box-shadow: 0 0 0 4px var(--pf-palette-color);
+.container.hoverable:hover {
+    box-shadow: 0 0 0 4px rgb(var(--pt-dark-color));
 }
 
 .container > .icon {
     display: none;
 
-    font-size: 24pt;
+    font-size: var(--sb-icon-size);
 
-    color: var(--pf-palette-color);
+    color: rgb(var(--pt-dark-color));
 }
 
 .container.placeholder > .icon {
