@@ -1,7 +1,7 @@
 <script lang="ts">
-import Palettable from './ui/Palettable.vue'
+import Palettable from './ui/Palettable.vue';
 
-import FlowContainer from './ui/FlowContainer.vue'
+import FlowContainer from './ui/FlowContainer.vue';
 
 export default {
     extends: Palettable,
@@ -11,7 +11,7 @@ export default {
 
         FlowContainer
     }
-}
+};
 </script>
 
 <template>

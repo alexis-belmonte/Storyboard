@@ -8,7 +8,7 @@ export default {
             type: Boolean
         }
     }
-}
+};
 </script>
 
 <template>

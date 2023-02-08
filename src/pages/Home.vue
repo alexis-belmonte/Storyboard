@@ -1,10 +1,10 @@
 <script lang="ts">
-import Menu from '@/components/app/Menu.vue'
+import Menu from '@/components/app/Menu.vue';
 
-import PageContainer from '@/components/app/ui/PageContainer.vue'
+import PageContainer from '@/components/app/ui/PageContainer.vue';
 
-import PostContainer from '@/components/app/PostContainer.vue'
-import Post from '@/components/app/Post.vue'
+import PostContainer from '@/components/app/PostContainer.vue';
+import Post from '@/components/app/Post.vue';
 
 export default {
     components: {
@@ -15,7 +15,7 @@ export default {
         PostContainer,
         Post
     }
-}
+};
 </script>
 
 <template>
@@ -47,6 +47,11 @@ export default {
             <Post tag="boulette" palette="primary">
                 :3
             </Post>
+            <Post tag="grosbgdu34" palette="primary">
+                je vends mes pieds et bien plus. 10$ la photo 30$ le pack de 10 
+                https://www.paypal.me/allanleherpeux
+            </Post>
+            
         </PostContainer>
     </PageContainer>
 </template>

@@ -1,10 +1,10 @@
 <script lang="ts">
-import Palettable from './ui/Palettable.vue'
+import Palettable from './ui/Palettable.vue';
 
-import Panel from './ui/Panel.vue'
-import Button from './ui/Button.vue'
+import Panel from './ui/Panel.vue';
+import Button from './ui/Button.vue';
 
-import ProfileCard from './ui/ProfileCard.vue'
+import ProfileCard from './ui/ProfileCard.vue';
 
 export default {
     extends: Palettable,
@@ -20,7 +20,7 @@ export default {
 
         ProfileCard
     }
-}
+};
 </script>
 
 <template>

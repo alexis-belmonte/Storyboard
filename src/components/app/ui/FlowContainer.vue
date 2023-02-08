@@ -1,5 +1,5 @@
 <script lang="ts">
-export default {}
+export default {};
 </script>
 
 <template>
@@ -14,6 +14,6 @@ export default {}
 
     gap: calc(var(--sb-spacing) * 2);
 
-    grid-template-columns: repeat(auto-fit, minmax(300pt, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200pt, 1fr));
 }
 </style>

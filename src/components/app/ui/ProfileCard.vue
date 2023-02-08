@@ -15,7 +15,7 @@ export default {
     components: {
         ProfileFace
     }
-}
+};
 </script>
 
 <template>
