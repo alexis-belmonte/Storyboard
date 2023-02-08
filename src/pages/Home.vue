@@ -2,7 +2,8 @@
 import Menu from '@/components/app/Menu.vue'
 
 import PageContainer from '@/components/app/ui/PageContainer.vue'
-import FlowContainer from '@/components/app/ui/FlowContainer.vue'
+
+import PostContainer from '@/components/app/PostContainer.vue'
 import Post from '@/components/app/Post.vue'
 
 export default {
@@ -10,8 +11,8 @@ export default {
         Menu,
 
         PageContainer,
-        FlowContainer,
-        
+
+        PostContainer,
         Post
     }
 }
@@ -21,7 +22,7 @@ export default {
     <Menu />
 
     <PageContainer>
-        <FlowContainer class="container">
+        <PostContainer>
             <Post tag="alexbelm48" palette="primary">
                 J'ai envie de dormir, mais je dois continuer de travailler afin de pouvoir
                 rester dans les temps. La conséquence de tout ce cambouis ? Une jolie interface
@@ -46,12 +47,10 @@ export default {
             <Post tag="boulette" palette="primary">
                 :3
             </Post>
-        </FlowContainer>
+        </PostContainer>
     </PageContainer>
 </template>
 
 <style scoped>
-.container > * {
-    aspect-ratio: 1;
-}
+
 </style>
