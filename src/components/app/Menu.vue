@@ -1,10 +1,8 @@
 <script lang="ts">
 import BrandLogo from '@/assets/brand/BrandLogo.vue';
 
-import Button from '@/components/app/ui/Button.vue'
-import ProfileFace from '@/components/app/ui/ProfileFace.vue'
-
-let mounted: boolean = false
+import Button from '@/components/app/ui/Button.vue';
+import ProfileFace from '@/components/app/ui/ProfileFace.vue';
 
 export default {
     components: {
@@ -12,11 +10,8 @@ export default {
 
         Button,
         ProfileFace
-    },
-    mounted() {
-        mounted = true
     }
-}
+};
 </script>
 
 <template>
