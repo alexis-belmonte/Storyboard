@@ -1,0 +1,28 @@
+/* Branding typeface */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/* UI text typeface */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+/* UI icon typefaces */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0');
+
+html {
+    /* Font face definitions */
+    --sb-branding-font: 'Archivo Black';
+    --sb-normal-font: 'Source Sans Pro';
+    --sb-monospace-font: 'Source Code Pro';
+
+    /* Font size definitions */
+    --sb-smaller-font-size: 10pt;
+    --sb-small-font-size: 12pt;
+    --sb-medium-font-size: 22pt;
+    --sb-big-font-size: 32pt;
+
+    /* Font weight definitions */
+    --sb-thin-font-weight: 200;
+    --sb-normal-font-weight: 400;
+    --sb-bold-font-weight: 600;
+}

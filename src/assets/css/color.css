@@ -4,14 +4,14 @@ html {
     --sb-light-color: rgba(255, 255, 255, 0.75);
 
     /* Color palette */
-    --sb-primary-color: rgb(105, 130, 105);
-    --sb-secondary-color: rgb(185, 155, 107);
-    --sb-tertiary-color: rgb(241, 219, 191);
-    --sb-quartenary-color: rgb(170, 86, 86);
+    --sb-primary-color: 253, 138, 138;
+    --sb-secondary-color: 223, 232, 132;
+    --sb-tertiary-color: 168, 209, 209;
+    --sb-quartenary-color: 158, 161, 212;
 
     /* Darker variant of the color palette */
-    --sb-primary-dark-color: rgb(42, 52, 42);
-    --sb-secondary-dark-color: rgb(79, 63, 38);
-    --sb-tertiary-dark-color: rgb(142, 93, 31);
-    --sb-quartenary-dark-color: rgb(68, 34, 34);
+    --sb-primary-dark-color: 251, 42, 42;
+    --sb-secondary-dark-color: 187, 199, 66;
+    --sb-tertiary-dark-color: 106, 176, 176;
+    --sb-quartenary-dark-color: 94, 99, 184;
 }
