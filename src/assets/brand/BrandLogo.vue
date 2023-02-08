@@ -8,10 +8,11 @@
 
 <style scoped>
 div {
-    font-family: 'Archivo Black';
+    font-family: var(--sb-branding-font);
+    font-size: var(--sb-medium-font-size);
 
     text-decoration: none;
 
-    color: var(--sb-primary-color);
+    color: rgb(var(--sb-primary-color));
 }
 </style>
