@@ -1,7 +1,7 @@
 <script lang="ts">
 import Palettable from './ui/Palettable.vue';
 
-import FlowContainer from './ui/FlowContainer.vue';
+import GridContainer from './ui/GridContainer.vue';
 
 export default {
     extends: Palettable,
@@ -9,15 +9,15 @@ export default {
     components: {
         Palettable,
 
-        FlowContainer
+        GridContainer
     }
 };
 </script>
 
 <template>
-    <FlowContainer :style="palettableStyle" class="container">
+    <GridContainer :style="palettableStyle" class="container">
         <slot />
-    </FlowContainer>
+    </GridContainer>
 </template>
 
 <style scoped>
