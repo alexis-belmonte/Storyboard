@@ -6,6 +6,8 @@ import PageContainer from '@/components/app/ui/PageContainer.vue';
 import PostContainer from '@/components/app/PostContainer.vue';
 import Post from '@/components/app/Post.vue';
 
+import { ø } from '@/main';
+
 export default {
     components: {
         Menu,
@@ -14,6 +16,10 @@ export default {
 
         PostContainer,
         Post
+    },
+    mounted() {
+        if (!ø.session)
+            this.$router.push('/hello');
     }
 };
 </script>
