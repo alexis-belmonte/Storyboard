@@ -6,6 +6,8 @@ import Button from './ui/Button.vue';
 
 import ProfileCard from './ui/ProfileCard.vue';
 
+import Content from './ui/Content.vue';
+
 export default {
     extends: Palettable,
     props: {
@@ -18,7 +20,9 @@ export default {
         Panel,
         Button,
 
-        ProfileCard
+        ProfileCard,
+
+        Content
     }
 };
 </script>
@@ -37,9 +41,9 @@ export default {
                 </div>
             </div>
 
-            <span class="content">
+            <Content>
                 <slot />
-            </span>
+            </Content>
         </div>
     </Panel>
 </template>
@@ -47,6 +51,8 @@ export default {
 <style scoped>
 .parent > .container {
     display: flex;
+
+    width: 100%;
 
     flex-flow: column;
 
@@ -69,9 +75,5 @@ export default {
     justify-self: right;
 
     column-gap: var(--sb-smaller-spacing);
-}
-
-.content {
-    font-family: var(--sb-normal-font);
 }
 </style>
