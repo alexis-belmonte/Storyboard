@@ -37,8 +37,6 @@ export default {
     padding: 7pt;
     height: 35pt;
 
-    outline: none;
-
     background-color: var(--sb-transparent-color);
 
     border-style: solid;
@@ -82,13 +80,10 @@ export default {
 }
 
 .button:focus {
-    border-color: var(--sb-transparent-color);
-
-    box-shadow: 0 0 0 3pt rgb(var(--pt-color));
+    outline-color: rgb(var(--pt-color));
 }
 
-.button:active > .icon, .button:active > .label,
-.button:focus > .icon, .button:focus > .label {
+.button:active > .icon, .button:active > .label {
     color: rgb(var(--pt-dark-color));
 }
 
@@ -110,13 +105,13 @@ export default {
     box-shadow: 0 0 0 3pt rgb(var(--pt-dark-color));
 }
 
-.button.filled:active, .button.filled:focus {
+.button.filled:active/*, .button.filled:focus */ {
     background-color: rgb(var(--pt-dark-color));
 
     box-shadow: 0 0 0 0px var(--sb-transparent-color);
 }
 
 .button.filled:focus {
-    box-shadow: 0 0 0 3pt rgb(var(--pt-color));
+    outline-color: rgb(var(--pt-dark-color));
 }
 </style>
