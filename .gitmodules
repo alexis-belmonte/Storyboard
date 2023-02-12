@@ -1,0 +1,3 @@
+[submodule "src/logic/interface"]
+	path = src/logic/interface
+	url = git@github.com:storyboard-sn/rest-interface.git
