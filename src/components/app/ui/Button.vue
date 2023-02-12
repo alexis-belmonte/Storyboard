@@ -37,6 +37,8 @@ export default {
     padding: 7pt;
     height: 35pt;
 
+    outline: none;
+
     background-color: var(--sb-transparent-color);
 
     border-style: solid;
@@ -76,10 +78,17 @@ export default {
 .button:active {
     border-color: var(--sb-transparent-color);
 
-    box-shadow: 0 0 0 4px rgb(var(--pt-dark-color));
+    box-shadow: 0 0 0 3pt rgb(var(--pt-dark-color));
 }
 
-.button:active > .icon, .button:active > .label {
+.button:focus {
+    border-color: var(--sb-transparent-color);
+
+    box-shadow: 0 0 0 3pt rgb(var(--pt-color));
+}
+
+.button:active > .icon, .button:active > .label,
+.button:focus > .icon, .button:focus > .label {
     color: rgb(var(--pt-dark-color));
 }
 
@@ -90,7 +99,7 @@ export default {
 
     background-color: rgb(var(--pt-color));
 
-    box-shadow: 0 0 0 0px var(--sb-transparent-color);
+    box-shadow: 0 0 0 0pt var(--sb-transparent-color);
 }
 
 .button.filled > .icon, .button.filled > .label {
@@ -98,12 +107,16 @@ export default {
 }
 
 .button.filled:hover {
-    box-shadow: 0 0 0 4px rgb(var(--pt-dark-color));
+    box-shadow: 0 0 0 3pt rgb(var(--pt-dark-color));
 }
 
-.button.filled:active {
+.button.filled:active, .button.filled:focus {
     background-color: rgb(var(--pt-dark-color));
 
     box-shadow: 0 0 0 0px var(--sb-transparent-color);
+}
+
+.button.filled:focus {
+    box-shadow: 0 0 0 3pt rgb(var(--pt-color));
 }
 </style>
