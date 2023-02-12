@@ -10,6 +10,19 @@ export default {
 
         Button,
         ProfileFace
+    },
+    methods: {
+        logOut() {
+            this.$app.api.user.logOut(this.$app.session!)
+                .then(() => {
+                    this.$app.session = undefined;
+                    this.$router.push('/hello');
+                })
+                .catch((error) => {
+                    if (error instanceof Error)
+                        alert(`Unable to log-out: ${error.message}`);
+                });
+        }
     }
 };
 </script>
@@ -28,7 +41,11 @@ export default {
                     </router-link>
                 </div>
                 <div class="right">
-                    <Button icon="logout" palette="quartenary" />
+                    <Button
+                        icon="logout"
+                        palette="quartenary"
+                        @click="logOut"
+                    />
                     <ProfileFace
                         palette="primary"
                         src="https://thispersondoesnotexist.com/image"
@@ -54,6 +71,8 @@ export default {
 
 header {
     display: flex;
+
+    width: 100%;
 
     padding: var(--sb-spacing) calc(var(--sb-spacing) * 1.5);
 
