@@ -1,17 +1,18 @@
 html {
     /* General color definitions */
     --sb-transparent-color: rgba(0, 0, 0, 0);
+    --sb-dark-color: rgba(0, 0, 0, 0.75);
     --sb-light-color: rgba(255, 255, 255, 0.75);
 
     /* Color palette */
     --sb-primary-color: 253, 138, 138;
-    --sb-secondary-color: 223, 232, 132;
+    --sb-secondary-color: 201, 212, 97;
     --sb-tertiary-color: 168, 209, 209;
     --sb-quartenary-color: 158, 161, 212;
 
     /* Darker variant of the color palette */
     --sb-primary-dark-color: 251, 42, 42;
-    --sb-secondary-dark-color: 187, 199, 66;
+    --sb-secondary-dark-color: 173, 186, 48;
     --sb-tertiary-dark-color: 106, 176, 176;
     --sb-quartenary-dark-color: 94, 99, 184;
 }
