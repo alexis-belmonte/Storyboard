@@ -6,8 +6,6 @@ import PageContainer from '@/components/app/ui/PageContainer.vue';
 import PostContainer from '@/components/app/PostContainer.vue';
 import Post from '@/components/app/Post.vue';
 
-import { ø } from '@/main';
-
 export default {
     components: {
         Menu,
@@ -18,7 +16,7 @@ export default {
         Post
     },
     mounted() {
-        if (!ø.session)
+        if (!this.$app.session)
             this.$router.push('/hello');
     }
 };
@@ -57,7 +55,6 @@ export default {
                 je vends mes pieds et bien plus. 10$ la photo 30$ le pack de 10 
                 https://www.paypal.me/allanleherpeux
             </Post>
-            
         </PostContainer>
     </PageContainer>
 </template>
