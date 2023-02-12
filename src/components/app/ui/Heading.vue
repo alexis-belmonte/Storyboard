@@ -20,13 +20,13 @@ export default {
 </script>
 
 <template>
-    <span class="container" :style="[palettableStyle, componentStyle]">
+    <span class="heading-container" :style="[palettableStyle, componentStyle]">
         <slot />
     </span>
 </template>
 
 <style scoped>
-.container {
+.heading-container {
     font-family: var(--sb-branding-font);
     font-size: var(--hd-size);
 

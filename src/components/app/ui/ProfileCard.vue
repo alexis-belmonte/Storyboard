@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="profilecard-container">
         <ProfileFace :src="faceSrc" :palette="palette" />
         <div class="descriptor">
             <span class="label">{{ name }}</span>
@@ -29,7 +29,7 @@ export default {
 </template>
 
 <style scoped>
-.container {
+.profilecard-container {
     display: inline-flex;
 
     flex-flow: row nowrap;
@@ -38,7 +38,7 @@ export default {
     column-gap: 12pt;
 }
 
-.container .descriptor {
+.profilecard-container .descriptor {
     display: inline-flex;
 
     flex-flow: column nowrap;

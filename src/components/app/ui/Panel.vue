@@ -12,13 +12,13 @@ export default {
 </script>
 
 <template>
-    <div :style="palettableStyle" class="container">
+    <div :style="palettableStyle" class="panel-container">
         <slot />
     </div>
 </template>
 
 <style scoped>
-.container {
+.panel-container {
     padding: 24pt;
 
     border-width: var(--sb-primary-border-width);

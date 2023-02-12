@@ -7,32 +7,32 @@ export default {
 </script>
 
 <template>
-    <span class="content" :style="palettableStyle">
+    <span class="container-content" :style="palettableStyle">
         <slot />
     </span>
 </template>
 
 <style scoped>
-.content {
+.container-content {
     font-family: var(--sb-normal-font);
     
     color: var(--sb-dark-color);
 }
 
-.content:deep(p) {
+.container-content:deep(p) {
     margin: 0;
     margin-top: var(--sb-smaller-spacing);
 }
 
-.content:deep(p):first-child {
+.container-content:deep(p):first-child {
     margin-top: 0;
 } 
 
-.content:deep(b) {
+.container-content:deep(b) {
     color: rgb(var(--pt-color));
 }
 
-.content:deep(u) {
+.container-content:deep(u) {
     color: rgb(var(--pt-color));
     text-decoration-color: rgb(var(--pt-color));
 }

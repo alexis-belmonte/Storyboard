@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-    <div class="container">
+    <div class="centered-container">
         <div class="object">
             <slot />
         </div>
@@ -11,7 +11,7 @@ export default {};
 </template>
 
 <style scoped>
-.container {
+.centered-container {
     display: flex;
 
     width: 100vw;
@@ -21,7 +21,7 @@ export default {};
     justify-content: center;
 }
 
-.container > .object {
+.centered-container > .object {
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;

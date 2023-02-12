@@ -20,7 +20,7 @@ export default {
 
 <template>
     <div
-        class="container"
+        class="profileface-container"
         :style="[componentStyle, palettableStyle]"
         :class="{ 'placeholder': !src, 'hoverable': hoverable }">
         <span class="material-symbols-outlined icon">person</span>
@@ -28,7 +28,7 @@ export default {
 </template>
 
 <style scoped>
-.container {
+.profileface-container {
     display: inline-flex;
 
     align-items: center;
@@ -52,11 +52,11 @@ export default {
     transition: box-shadow var(--sb-normal-transition);
 }
 
-.container.hoverable:hover {
+.profileface-container.hoverable:hover {
     box-shadow: 0 0 0 4px rgb(var(--pt-dark-color));
 }
 
-.container > .icon {
+.profileface-container > .icon {
     display: none;
 
     font-size: var(--sb-icon-size);
@@ -64,7 +64,7 @@ export default {
     color: rgb(var(--pt-dark-color));
 }
 
-.container.placeholder > .icon {
+.profileface-container.placeholder > .icon {
     display: block;
 }
 

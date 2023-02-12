@@ -3,13 +3,13 @@ export default {};
 </script>
 
 <template>
-    <div class="container">
+    <div class="page-container">
         <slot />
     </div>
 </template>
 
 <style scoped>
-.container {
+.page-container {
     margin: 24pt;
 }
 </style>
